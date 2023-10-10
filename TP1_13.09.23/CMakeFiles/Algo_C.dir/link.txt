@@ -1,1 +1,0 @@
-/usr/bin/cc -rdynamic CMakeFiles/Algo_C.dir/carre.c.o CMakeFiles/Algo_C.dir/hello.c.o CMakeFiles/Algo_C.dir/heures.c.o CMakeFiles/Algo_C.dir/jours.c.o CMakeFiles/Algo_C.dir/number.c.o -o Algo_C 

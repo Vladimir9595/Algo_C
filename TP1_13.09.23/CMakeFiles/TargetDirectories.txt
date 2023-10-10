@@ -1,3 +1,0 @@
-/home/vladimir/Cours_CNAM/Algorithme_C/TP1_13.09.23/CMakeFiles/Algo_C.dir
-/home/vladimir/Cours_CNAM/Algorithme_C/TP1_13.09.23/CMakeFiles/edit_cache.dir
-/home/vladimir/Cours_CNAM/Algorithme_C/TP1_13.09.23/CMakeFiles/rebuild_cache.dir
