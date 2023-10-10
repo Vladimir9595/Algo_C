@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
 
 typedef int DATA; // Definition du type de donnees
 
@@ -96,11 +97,54 @@ int events(DATA array[], int SIZE, DATA el) {
     return counter;
 }
 
-int find_first( DATA array[ ], int size, DATA el ) {
-    for ( int i = 0; i < size; i++ ) {
+int find_first( DATA array[], int SIZE, DATA el ) {
+    for ( int i = 0; i < SIZE; i++ ) {
         if ( array[i] == el ) {
             return i;
         }
     }
     return -1;
+}
+
+int find_last( DATA array[], int SIZE, DATA el ) {
+    for ( int i = SIZE - 1; i >= 0; i-- ) {
+        if ( array[i] == el ) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+void reverse( DATA array[], int SIZE ) {
+    for ( int i = 0; i < SIZE / 2; i++ ) {
+        swap_elt( array, SIZE, i, SIZE - 1 - i );
+    }
+      print(array, SIZE);
+}
+
+void rotate_right( DATA array[], int SIZE ) {
+    DATA temp = array[SIZE - 1];
+    for ( int i = SIZE - 1; i > 0; i-- ) {
+        array[i] = array[i - 1];
+    }
+    array[0] = temp;
+    print(array, SIZE);
+}
+
+void rotate_left( DATA array[], int SIZE ) {
+    DATA temp = array[0];
+    for ( int i = 0; i < SIZE - 1; i++ ) {
+        array[i] = array[i + 1];
+    }
+    array[SIZE - 1] = temp;
+    print(array, SIZE);
+}
+
+bool is_palindrome( DATA array[], int SIZE ) {
+    for ( int i = 0; i < SIZE / 2; i++ ) {
+        if ( array[i] != array[SIZE - 1 - i] ) {
+            return false;
+        }
+    }
+    return true;
 }

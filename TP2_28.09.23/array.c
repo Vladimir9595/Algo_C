@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
 #include "functions.h"
 
 typedef int DATA; // Definition du type de donnees
@@ -42,10 +43,27 @@ int main()
 
     printf("Le nombre d'occurrences de %d dans le tableau est : %d\n", researched_value, nb_events);
 
-    int index = find_first(array, SIZE, researched_value);
+    int first = find_first(array, SIZE, researched_value);
 
-    printf("L'indice de la première occurrence de %d dans le tableau est : %d\n", researched_value, index);
+    printf("L'indice de la première occurrence de %d dans le tableau est : %d\n", researched_value, first);
 
+    int last = find_last(array, SIZE, researched_value);
+
+    printf("L'indice de la dernière occurrence de %d dans le tableau est : %d\n", researched_value, last);
+
+    reverse(array, SIZE);
+
+    rotate_left(array, SIZE);
+
+    rotate_right(array, SIZE);
+
+    bool palindrome = is_palindrome(array, SIZE);
+
+     if (palindrome) {
+        printf("Le tableau est un palindrome.\n");
+    } else {
+        printf("Le tableau n'est pas un palindrome.\n");
+    }
 
     return 0;
 }
