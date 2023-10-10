@@ -8,8 +8,8 @@ EXECUTABLE = $(RESOURCES:.c=)
 
 all: $(EXECUTABLE)
 
-%: %.c
-	$(C) $< functions.c -o $@
+%: %.c functions.c
+	$(C) $^ -o $@
 	./$@
 
 clean:
