@@ -13,13 +13,28 @@ int calculateOne(int n) {
     }
 }
 
+int syracuse(int n)
+{
+    printf("%d\n", n);
+    if (n == 1) {
+        return 1;
+    }
+    else if (n % 2 == 0) {
+        // printf("%d\n", syracuse(n / 2));
+        syracuse(n / 2);
+    } else
+        // printf("%d\n", syracuse(3 * n + 1));
+        syracuse(3 * n + 1);
+}
+
 
 
 int main()
 {
     printf("\nSuites :\n");
     calculateOne(5);
-
+    printf("\nSuite de syracuse :\n");
+    syracuse(5);
 
     return 0;
 }
