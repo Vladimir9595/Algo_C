@@ -27,6 +27,17 @@ int syracuse(int n)
         syracuse(3 * n + 1);
 }
 
+int showNumbers(int n)
+{
+    if (n < 10) {
+        printf("%d\n", n);
+    } else {
+        showNumbers(n / 10);
+        printf("%d\n", n % 10);
+    }
+}
+
+
 
 
 int main()
@@ -35,6 +46,8 @@ int main()
     calculateOne(5);
     printf("\nSuite de syracuse :\n");
     syracuse(5);
+    printf("\nAffichage des chiffres :\n");
+    showNumbers(123456789);
 
     return 0;
 }
