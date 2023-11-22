@@ -37,7 +37,23 @@ int showNumbers(int n)
     }
 }
 
+int showNumbers2(int n)
+{
+    int index = 0;
+    int array[100];
 
+    while (n > 0)
+    {
+        //printf("%d\n", n % 10);
+        array[index] = n % 10;
+        n /= 10;
+        index++;
+    }
+
+    for (int i = index-1; i >= 0; i--) {
+        printf("%d\n", array[i]);
+    }
+}
 
 
 int main()
@@ -48,6 +64,8 @@ int main()
     syracuse(5);
     printf("\nAffichage des chiffres :\n");
     showNumbers(123456789);
+    printf("\nAffichage des chiffres (itératif) :\n");
+    showNumbers2(123456789);
 
     return 0;
 }
