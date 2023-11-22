@@ -37,7 +37,7 @@ int showNumbers(int n)
     }
 }
 
-int showNumbers2(int n)
+int showNumbers2(long int n)
 {
     int index = 0;
     int array[100];
@@ -65,7 +65,7 @@ int main()
     printf("\nAffichage des chiffres :\n");
     showNumbers(123456789);
     printf("\nAffichage des chiffres (itératif) :\n");
-    showNumbers2(123456789);
+    showNumbers2(1234567891212121);
 
     return 0;
 }
