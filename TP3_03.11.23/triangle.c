@@ -19,4 +19,3 @@ void init_pascal(int tri, int nbl) {
         }
         tri[INDEX(i,i)] = 1;
     }
-}
