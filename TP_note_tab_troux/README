@@ -1,0 +1,55 @@
+# Langage C
+
+## Getting started
+
+This is the repository to push exos in C.
+
+## Installation
+
+Clone the repository:
+
+```bash
+# ssh link
+git clone git@github.com:Vladimir9595/Langage_C.git
+```
+
+or
+
+```bash
+#https link
+git clone https://git@github.com/Vladimir9595/Langage_C.git
+```
+
+## Prerequisites
+
+You need to have installed the following tools:
+
+- [Git](https://git-scm.com/)
+- [Make](https://www.gnu.org/software/make/)
+- [CMake](https://cmake.org/)
+
+If you are using Windows, you can install [Git for Windows](https://gitforwindows.org/) and [Make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm) or [CMake](https://cmake.org/).
+
+Otherwise, you can use the package manager of your Linux distribution.
+
+## Run the project
+
+You can run the project by followings steps :
+
+Once clone the project you can go inside it
+
+```bash
+cd Langage_C
+```
+
+Then make the files in object
+
+```bash
+make
+```
+
+Now you can run it
+
+```bash
+./tableaux_trous
+```
